@@ -32,19 +32,19 @@ public class RestTemplateUserController
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 
-    @PostMapping("/createUser1")
-    public ResponseEntity<Object> consumeWebService2()
-    {
-        RestTemplate restTemplate = new RestTemplate();
-        String url = "http://localhost:8087/createUser";
-
-        Map<String, String> requestBody = new HashMap<>();
-        requestBody.put("name", "Amit Kumar");
-        requestBody.put("address", "Kolhapur");
-
-        Object result = restTemplate.postForObject(url, requestBody, Object.class);
-        System.out.println(result);
-        return new ResponseEntity<>(result, HttpStatus.CREATED);
-    }
+//    @PostMapping("/createUser1")
+//    public ResponseEntity<Object> consumeWebService2()
+//    {
+//        RestTemplate restTemplate = new RestTemplate();
+//        String url = "http://localhost:8087/createUser";
+//
+//        Map<String, String> requestBody = new HashMap<>();
+//        requestBody.put("name", "Amit Kumar");
+//        requestBody.put("address", "Kolhapur");
+//
+//        Object result = restTemplate.postForObject(url, requestBody, Object.class);
+//        System.out.println(result);
+//        return new ResponseEntity<>(result, HttpStatus.CREATED);
+//    }
 
 }

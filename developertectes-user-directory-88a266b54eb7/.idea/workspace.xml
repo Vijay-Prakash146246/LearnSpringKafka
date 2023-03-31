@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="517516f3-a867-4fd8-be23-4a79604f6f7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Consuming a RESTful Web Service EXample/ConsumeRESTAPI/src/main/java/RestWebSvcConsume/RestTemplateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Consuming a RESTful Web Service EXample/ConsumeRESTAPI/src/main/java/RestWebSvcConsume/RestTemplateUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

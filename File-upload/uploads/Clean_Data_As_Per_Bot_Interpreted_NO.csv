@@ -1,0 +1,17 @@
+Questions,Process_Variable,Option,Section_Id
+Please indicate which year did you complete Highest Qualification?,psHighQualYr,,Education
+What was your major/ discipline? ,psDiscipline,,Education
+From which University did you do your Highest Qualification?,psUniversity,,Education
+How many years of university education have you done/completed after class 12th?,psUnivEduYears,,Education
+What is your total work experience (in years)?,psTotWorkExp,,Work_Experience
+How long have you been performing in the current role?,psCurrRoleDuration,,Work_Experience
+Please list down your primary skills and indicate respective experience in months.,psPrimarySkills,,Work_Experience
+What are  the different Domains that you have worked in? Please indicate respective experience in months.,psDomains,,Work_Experience
+What is your current Location ?,psCurrLocation,,Terms_and_Conditions
+What is your current work timings?,psWorkTime,,Terms_and_Conditions
+"Is your current role from Office, Home or is Hybrid?",psWFH,Office,Terms_and_Conditions
+Please share details of your Medical Insurance coverage value ,psMedCoverVal,,Terms_and_Conditions
+How many leaves are you eligible for in a year?,psLeaveEligibility,,Terms_and_Conditions
+Why are you looking for a change ?,psChangeReasons,,Terms_and_Conditions
+Is your Current role Full Time/Part Time/Contract?,psFullPartContract,Full Time,Terms_and_Conditions
+How flexible you are with interview schedule? Would you need any advance notice for each round?,psInterviewNotice,,

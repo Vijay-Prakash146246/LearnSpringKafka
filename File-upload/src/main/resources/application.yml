@@ -32,6 +32,3 @@ management:
       metrics_path: '/actuator/prometheus'
       static_configs:
         - targets: ['localhost:8888']
-
-
-

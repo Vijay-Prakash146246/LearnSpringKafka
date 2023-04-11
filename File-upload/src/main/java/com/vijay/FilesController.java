@@ -1,7 +1,10 @@
 package com.vijay;
 
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
+
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -15,9 +18,10 @@ public class FilesController {
 
     @Autowired
     FilesStorageService storageService;
-
+    //private static final Logger logger = (Logger) LoggerFactory.getLogger(FilesController.class);
     @PostMapping("/upload")
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
+        //logger.info("Checking");
         String message = "";
         try {
             storageService.save(file);
@@ -49,5 +53,10 @@ public class FilesController {
         Resource file = storageService.load(filename);
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getFilename() + "\"").body(file);
+    }
+    @GetMapping("/")
+    public  String check()
+    {
+        return "Checking Sucessful";
     }
 }

@@ -1,0 +1,17 @@
+spring Boot Security
+---------------------
+Authentication
+Authorization
+Filter
+
+username : user
+Using generated security password: 
+4b068017-9f11-4fc9-ba54-a24927f05030
+
+ctrl+n : for type search
+-------------------------
+BasicAuthenticationFilter 
+
+create owne user name and password 
+
+alt+insert : to override springSecurity method

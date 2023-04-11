@@ -23,12 +23,21 @@ management:
   endpoint:
     health:
       show-details: always
-  global:
-    scrape_interval:     5s
-    evaluation_interval: 5s
-
-  scrape_configs:
-    - job_name: 'spring-boot'
-      metrics_path: '/actuator/prometheus'
-      static_configs:
-        - targets: ['localhost:8888']
+#    prometheus:
+#      enabled: true
+#    metrics:
+#      enabled: true
+#  global:
+#    scrape_interval:     5s
+#    evaluation_interval: 5s
+#
+#  scrape_configs:
+#    - job_name: 'spring-boot'
+#      metrics_path: '/actuator/prometheus'
+#      static_configs:
+#        - targets: ['localhost:9090']
+#
+#    - job_name: 'File-upload'
+#      matrics_path: '/actuator/prometheus'
+#      static_configs:
+#        - targets: [ 'localhost:9099' ]

@@ -13,35 +13,28 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
+//@EnableGlobalAuthentication
 public class MySecurityConfig
 {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        //You can use authorizeHttpRequests instead of authorizeRequests and requestMatchers instead of antMatchers.
         http
-                .authorizeRequests()
+                //.authorizeRequests()
+                .authorizeHttpRequests()
+               //.requestMatchers("/home","/login","/register").permitAll()
+                //.requestMatchers("/public/**").permitAll() //means public sa start hona wala sara url ko permit karna hai
+                .requestMatchers("/public/**").hasRole("USER")
+                .requestMatchers("/users/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()
                 .httpBasic();
         return http.build();
     }
-    //// allow access to the /home URL without authentication
-//@Bean
-//public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//    http.authorizeRequests()
-//            .antMatchers("/home")
-//            .permitAll()
-//            .and()
-//            .authorizeRequests()
-//            .antMatchers("/user")
-//            .hasRole("ADMIN")
-//            .anyRequest()
-//            .authenticated()
-//            .and()
-//            .httpBasic();
-//    return http.build();
-//}
-
+    //Role - High level view -> Normal : read
+    //Authority: permission
+    //admin :- read write delete
     @Bean
     public InMemoryUserDetailsManager userDetailsService(PasswordEncoder passwordEncoder) {
         UserDetails user = User.withUsername("user")
@@ -52,6 +45,11 @@ public class MySecurityConfig
         UserDetails admin = User.withUsername("admin")
                 .password(passwordEncoder.encode("admin"))
                 .roles("USER", "ADMIN")
+                .build();
+
+        UserDetails onlyadmin = User.withUsername("onlyadmin")
+                .password(passwordEncoder.encode("onlyadmin"))
+                .roles("ADMIN")
                 .build();
 
         return new InMemoryUserDetailsManager(user, admin);

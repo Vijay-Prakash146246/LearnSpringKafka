@@ -2,8 +2,6 @@ package com.learn.controller;
 
 import com.learn.models.User;
 import com.learn.services.UserService;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,13 +34,4 @@ public class UserController
         return  this.userService.addUser(user);
     }
 
-    @GetMapping("/clearSession")
-    public String clearSession(HttpServletRequest request) {
-        HttpSession session = request.getSession(false);
-        if (session != null) {
-            session.invalidate();
-        }
-
-        return "redirect:/";
-    }
 }

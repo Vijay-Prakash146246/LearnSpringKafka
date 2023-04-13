@@ -15,3 +15,15 @@ BasicAuthenticationFilter
 create owne user name and password 
 
 alt+insert : to override springSecurity method
+//Inmemory configuration
+Session ID
+Role based authentication. 
+Permission based authentication.
+CSRF(one kind of attack) token  
+and form-based authentication
+Form based authentication with database
+NOn Browser client ko jab haam use karta 
+hai tooo hama csrf() ko disable karna hota
+hai
+   i.e.  http.csrf().disable()
+Token : cookies k form ma data jaata hai

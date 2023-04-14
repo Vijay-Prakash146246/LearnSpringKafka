@@ -27,3 +27,13 @@ hai tooo hama csrf() ko disable karna hota
 hai
    i.e.  http.csrf().disable()
 Token : cookies k form ma data jaata hai
+
+
+OAuth2 Example : 
+-----------------
+i.e. signup through google or facebook,tweeter
+
+
+Client ID :  549187911031-20oqgf5888v5p96c3utt1qcrqqrd846g.apps.googleusercontent.com
+Client secret : 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
+

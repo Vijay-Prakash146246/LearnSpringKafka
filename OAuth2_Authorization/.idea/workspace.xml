@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5656f7a-8a5f-4d4f-a20a-a02bf850cedc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../spring-boot-security-learn-Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-security-learn-Notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/JwtGeneratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/JwtGeneratorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jwt-Authentication/src/main/java/com/JWT/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +88,19 @@
       <option name="resourceGroup" />
       <option name="stagingFolder" />
       <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OAuth2_Authorization" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OAuth2_Authorization" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
